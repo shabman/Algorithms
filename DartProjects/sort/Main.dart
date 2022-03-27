@@ -1,3 +1,5 @@
+import 'dart:collection';
+import 'sort.dart';
 
 void main() {
   var sort = new Sort<int>(new List<int>.from([1, 2, 3, 4, 5]), true);
