@@ -50,3 +50,25 @@ void main() {
   sort.sort(new List<String>.from(["a", "b", "c", "d", "e"]), false);
 }
 ```
+
+# Bubble Sort
+
+- A sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+
+Demo (Java)
+
+```java
+package me.shab.bubble;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		BubbleSort sort = new BubbleSort(new int[] {64, 34, 25, 12, 22, 11, 90});
+		int[] res = sort.solve();
+		
+		for (int i = 0; i < res.length; ++i) {
+			System.out.println(res[i]);
+		}
+	}
+}
+```
