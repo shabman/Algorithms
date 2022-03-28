@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CSAlgorithms
 {
@@ -19,42 +19,44 @@ namespace CSAlgorithms
             T[] output = (T[]) Data.Clone();
             Type type = output.GetType();
 
-            if (type.Equals(typeof(int)))
+            if (type.Equals(typeof(int[])))
             {
+                int temp;
                 for (int i = 0; i < output.Length; i++)
                 {
                     for (int k = i + 1; k < output.Length; k++)
                     {
                         if (Convert.ToInt32(output[i]) > Convert.ToInt32(output[k]) && Ascend)
                         {
-                            int temp = Convert.ToInt32(output[i]);
+                            temp = Convert.ToInt32(output[i]);
                             output[i] = output[k];
                             output[k] = (T) (object) temp;
                         }
                         else if (Convert.ToInt32(output[i]) < Convert.ToInt32(output[k]) && !Ascend)
                         {
-                            int temp = Convert.ToInt32(output[i]);
+                            temp = Convert.ToInt32(output[i]);
                             output[i] = output[k];
                             output[k] = (T) (object) temp;
                         }
                     }
                 }
             }
-            else if (type.Equals(typeof(string)))
+            else if (type.Equals(typeof(string[])))
             {
+                string temp;
                 for (int i = 0; i < output.Length; i++)
                 {
-                    for (int k = i + 1; k < output.Length; i++)
+                    for (int k = i + 1; k < output.Length; k++)
                     {
-                        if (Convert.ToString(output[i]).CompareTo(Convert.ToString(output[k])) > 0 && !Ascend)
+                        if (Convert.ToString(output[i]).CompareTo(Convert.ToString(output[k])) > 0 && Ascend)
                         {
-                            string temp = Convert.ToString(output[i]);
+                            temp = Convert.ToString(output[i]);
                             output[i] = output[k];
                             output[k] = (T) (object) temp;
                         }
-                        else if (Convert.ToString(output[i]).CompareTo(Convert.ToString(output[k])) < 0 && Ascend)
+                        else if (Convert.ToString(output[i]).CompareTo(Convert.ToString(output[k])) < 0 && !Ascend)
                         {
-                            string temp = Convert.ToString(output[i]);
+                            temp = Convert.ToString(output[i]);
                             output[i] = output[k];
                             output[k] = (T) (object) temp;
                         }
