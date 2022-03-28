@@ -1,7 +1,8 @@
 # Algorithms
 
 # Algorithms I've made so far:
-- Sort
+- Sort (Java, Dart)
+- Bubble Sort (Java)
 
 # Sort
 
