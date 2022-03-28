@@ -1,7 +1,7 @@
 # Algorithms
 
 # Algorithms I've made so far:
-- Sort (Java, C#)
+- Sort (Java, C#, Python)
 - Bubble Sort (Java, C#)
 
 # Sort
@@ -62,6 +62,21 @@ namespace CSAlgorithms.sort
         }
     }
 }
+```
+
+Demo (Python)
+
+```py
+if __name__ == '__main__':
+    arr = [1, 3, 54, 7, 8, 69]
+    asc = True
+    sort = Sort(arr, asc)
+    print(sort.solve())
+
+    arr = ["bob", "the", "builder", "is", "dumb"]
+    asc = False
+    sort = Sort(arr, asc)
+    print(sort.solve())
 ```
 
 # Bubble Sort
