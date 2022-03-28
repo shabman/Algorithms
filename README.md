@@ -1,5 +1,3 @@
-# Algorithms
-
 # Algorithms I've made so far:
 - Sort (Java, C#, Python)
 - Bubble Sort (Java, C#)
