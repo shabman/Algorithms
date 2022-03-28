@@ -38,7 +38,7 @@ Demo (C#)
 ```cs
 using System;
 
-namespace CSAlgorithms
+namespace CSAlgorithms.sort
 {
     class MainClass
     {
