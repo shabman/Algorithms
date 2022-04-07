@@ -134,3 +134,11 @@ namespace CSAlgorithms.bubble
     }
 }
 ```
+
+Demo (TypeScript)
+
+```ts
+import { bubbleSortIntegers } from "./bubblesort"
+
+console.log(bubbleSortIntegers([ 64, 34, 25, 12, 22, 11, 90 ]))
+```
