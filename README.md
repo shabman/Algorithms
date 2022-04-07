@@ -1,6 +1,6 @@
 # Algorithms I've made so far:
 - Sort (Java, C#, Python, TypeScript by Intervinn)
-- Bubble Sort (Java, C#)
+- Bubble Sort (Java, C#, TypeScript by Intervinn)
 
 # Sort
 
