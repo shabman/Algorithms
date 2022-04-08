@@ -1,6 +1,6 @@
 # Algorithms I've made so far:
 - Sort (Java, C#, Python, TypeScript by Intervinn)
-- Bubble Sort (Java, C#, TypeScript by Intervinn)
+- Bubble Sort (Java, C#, TypeScript & Python by Intervinn)
 
 # Sort
 
@@ -141,4 +141,16 @@ Demo (TypeScript)
 import { bubbleSortIntegers } from "./bubblesort"
 
 console.log(bubbleSortIntegers([ 64, 34, 25, 12, 22, 11, 90 ]))
+```
+Demo (Python)
+
+```py
+
+from bubblesort import BubbleSort
+
+if __name__ == "__main__":
+    sort = BubbleSort([1,5,7,1,2,5,0,2,15,73,25,212,69])
+
+    print(sort.solve())
+
 ```
